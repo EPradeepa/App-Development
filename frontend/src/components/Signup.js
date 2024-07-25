@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/css/Signup.css'; // Make sure to import your CSS file
+import { Link } from 'react-router-dom';
+
 
 function Signup() {
     const [formData, setFormData] = useState({
@@ -134,8 +136,8 @@ function Signup() {
                     onChange={handleChange}
                     required
                 >
-                    <option value="user">Student</option>
-                    <option value="admin">Others</option>
+                    <option value="user">Customer</option>
+                    <option value="admin">Admin</option>
                 </select>
                 <label>Password</label>
                 <input
@@ -166,9 +168,13 @@ function Signup() {
                     I accept the terms and conditions
                 </label>
                 <button type="submit">Sign Up</button>
+                
                 <button type="button" onClick={handleReset}>Reset</button>
             </form>
             {error && <p className="error-message">{error}</p>}
+            <p>Already have an account
+            <Link to="/Login">Login</Link> 
+            </p>
         </div>
     );
 }

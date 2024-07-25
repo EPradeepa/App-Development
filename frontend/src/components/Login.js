@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import '../assets/css/Login.css'; // Make sure to import your CSS file
+import { Link } from 'react-router-dom';
 
 function Login() {
     const [formData, setFormData] = useState({
@@ -59,9 +60,14 @@ function Login() {
                     name="password"
                     value={formData.password}
                     onChange={handleChange} required/>
-                <button type="submit">Login</button>
-            </form>
-            {error && <p>{error}</p>}
+                     {error && <p>{error}</p>}
+                <button type="submit">Login</button> 
+                </form>
+                <p>Don't have an account? 
+                    <Link to="/Signup">Signup</Link>                
+                       </p>
+            
+           
         </div>
     );
 }
