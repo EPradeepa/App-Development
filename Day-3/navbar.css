@@ -1,0 +1,66 @@
+.navbar {
+  background-color: rgba(255, 247, 2, 0.932);
+  padding: 10px 10px;
+ }
+ 
+ .trek {
+  font-size: 20px;
+ }
+ 
+ .trailblazer {
+  margin-top: 10px;
+  font-size: 35px;
+  color: rgb(222, 151, 215);
+  
+ }
+ .cart-icon {
+  font-size: 0.5em;
+  color: #0e0e0ed6;
+  cursor: pointer;
+  margin-left: 10px; 
+  margin-bottom: 10px;
+  
+}
+
+/* .cart-icon i {
+  margin-left: 150px; 
+  margin-bottom: 250px;
+}  */
+
+.cart-icon:hover i {
+  color: #e758a0;
+}
+ .home {
+  text-decoration: none;
+  color: rgba(11, 11, 11, 0.914);
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-style: italic;
+  font-family: lucida handwriting;
+ }
+ 
+ .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+ }
+ 
+ .nav-item {
+  margin: auto;
+ }
+ 
+ .nav-link {
+  text-decoration: none;
+  color: rgba(12, 12, 12, 0.834);
+  font-weight: bold;
+  padding: 5px 5px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  font-size: 18px;
+ }
+ 
+ .nav-link:hover {
+  background-color: wheat;
+ }

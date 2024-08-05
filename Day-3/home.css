@@ -1,0 +1,16 @@
+img {
+  width: 100%;
+  height: 90vh;
+}
+.explore-btn {
+  font-weight: bold;
+  padding: 10px 40px;
+  background-color: #f1eaea;
+  font-size: 1.5em;
+  color: rgb(255, 250, 250);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgb(242, 239, 239);
+ margin-top: -10px;
+}
